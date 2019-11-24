@@ -1,9 +1,10 @@
 class Application
-  
+  @@items[]
   def call(env)
     
     resp = Rack::Response.new  
-    req = Rack::Response.new(env) 
+    req = Rack::Response.new(env)
+    
       if req.path.match(/items/)
         item = @@items.find do |i| 
         i.name == item_name
