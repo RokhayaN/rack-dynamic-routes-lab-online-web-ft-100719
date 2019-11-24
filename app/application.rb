@@ -1,4 +1,4 @@
 class Application
   
-  def 
- @@items 
+  def call(env)
+ 
